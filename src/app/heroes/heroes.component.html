@@ -1,0 +1,14 @@
+<h1> {{ title }} </h1>
+<app-heroes></app-heroes>
+
+
+<h2>{{hero.name}} Details</h2>
+<div><span> id: </span> {{hero.id}}</div>
+<div><span> name: </span> {{hero.name | uppercase }}</div>
+
+<div>
+  <label>
+    // 여기서 [(ngModel)]은 양방향 데이터 바인딩 구문
+    <input [(ngModel)] = "hero.name" placeholder="name"/>
+  </label>
+</div>
